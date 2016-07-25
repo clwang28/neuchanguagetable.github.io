@@ -22,7 +22,7 @@
     color: #818181;
     display: block;
     transition: 0.3s;
-    font-family: sans-serif;
+    font-family: 'Josefin Slab', serif;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -44,7 +44,7 @@
 #main {
     transition: margin-left .5s;
     padding: 20px;
-    font-family: sans-serif;
+    font-family: 'Josefin Slab', serif;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -90,7 +90,6 @@
 #about {
     background-color: lightgray;
     padding: 40px 10px 40px 10px;
-    margin: 0px 0px 0px 0px;
 }
 
 #title {
@@ -133,17 +132,14 @@ body {
 
 #signup {
     background-color: lightgray;
-    padding: 30px 80px;
-    margin: 0px -20px 0px -30px;
+    padding: 40px 10px 40px 0px;
 }
 
 #contact {
     background-color: darkred;
     color: white;
-    padding: 100px 100px 100px 100px;
-    margin-right: -20px;
-    margin-left: -20px;
-    margin-bottom: -20px;
+    padding: 60px 10px 60px 0px;
+    margin: 0px -20px -20px -20px;
 }
 
 .tickets {
@@ -170,17 +166,24 @@ body {
     transition: color 0.15s ease-in, background 0.15s ease-in;
 }
 
-
-.fb a img {
-    background-color: ivory;
-    border-radius: 3px 3px 3px 3px;
+.fa {
+    background-color: rgb(240, 240, 220);
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 
-.fb a img:hover {
-    background-color: maroon;
-    border-radius: 3px 3px 3px 3px;
+a {
+    color: rgb(70, 70, 70);
+}
+
+a:hover {
+    color: darkred;
     transition: color 0.15s ease-in, background 0.15s ease-in;
 }
+
+
+
 
 .col-sm-6 {
     margin-top: 20px;
