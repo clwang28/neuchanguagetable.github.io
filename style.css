@@ -84,12 +84,12 @@
 
 #intro {
     color: white;
-    padding: 10px;
+    padding: 5px;
 }
 
 #about {
     background-color: lightgray;
-    padding: 100px 100px;
+    padding: 30px 10px 30px 10px;
     margin: 0px -20px 0px -30px;
 }
 
