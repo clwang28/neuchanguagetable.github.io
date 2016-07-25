@@ -84,6 +84,7 @@
 
 #intro {
     color: white;
+    padding: 10px;
 }
 
 #about {
@@ -171,12 +172,12 @@ body {
 
 
 .fb a img {
-    background-color: transparent;
+    background-color: ivory;
     border-radius: 3px 3px 3px 3px;
 }
 
 .fb a img:hover {
-    background-color: pink;
+    background-color: maroon;
     border-radius: 3px 3px 3px 3px;
     transition: color 0.15s ease-in, background 0.15s ease-in;
 }
