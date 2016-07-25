@@ -67,6 +67,8 @@
 .jumbotron {
     background-repeat: no-repeat;
     background-color: darkred;
+    padding: 100px 0px 100px 0px;
+    margin: -30px -20px 0px -30px;
     text-align: center;
 }
 
@@ -169,13 +171,11 @@ body {
 
 
 .fb a img {
-    width: 25%;
     background-color: transparent;
     border-radius: 3px 3px 3px 3px;
 }
 
 .fb a img:hover {
-    width: 25%;
     background-color: pink;
     border-radius: 3px 3px 3px 3px;
     transition: color 0.15s ease-in, background 0.15s ease-in;
