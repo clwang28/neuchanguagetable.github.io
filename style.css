@@ -1,15 +1,30 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-    transition: margin-left .5s;
+    /*transition: margin-left .5s;*/
     padding: 20px;
     font-family: 'Josefin Slab', serif;
 }
 
-.jumbotron {
-    background-repeat: no-repeat;
+#intro {
+    color: white;
+    padding: 5px;
     background-color: darkred;
-    padding: 100px 0px 100px 0px;
-    margin: 20px -20px 0px -20px;
+    padding: 60px 0px 60px 0px;
+    margin: 30px -20px 0px -20px;
+    font-family: 'Lato', sans-serif;
+}
+
+#title {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.jumbotron {
+    background-image: url(texture.jpg);
+    background-repeat: repeat;
+    background-color: #D7FAEA;
+    padding: 10px 0px 10px 0px;
+    margin: 0px -20px 0px -20px;
     text-align: center;
 }
 
@@ -18,23 +33,15 @@
     border-radius: 5px 5px 5px 5px;
 }
 
-/*find a better font for this XD */
-/*find a better font for this XD */
-/*find a better font for this XD */
-
-
-#intro {
-    color: white;
-    padding: 5px;
+#style {
+    font-size: 18px;
+    margin: -20px 20px 0px 20px;
+    padding-bottom: 30px;
 }
 
 #about {
     background-color: rgb(240, 240, 240);
     padding: 60px 10px 60px 10px;
-}
-
-#title {
-    text-align: center;
 }
 
 #centerbody {
@@ -80,7 +87,7 @@ body {
 #contact {
     background-color: darkred;
     color: white;
-    padding: 60px 10px 60px 0px;
+    padding: 40px 10px 60px 0px;
     margin: 0px -20px -20px -20px;
 }
 
