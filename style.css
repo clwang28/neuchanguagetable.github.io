@@ -76,8 +76,8 @@
     .carousel-caption {
       display: none;
     }
-    .jumbotron {
-        size: 200%;
+    #logo {
+        height: 200px;
     }
 }
 
