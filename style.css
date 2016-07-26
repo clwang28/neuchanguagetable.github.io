@@ -40,9 +40,14 @@
     text-align: justify;
 }
 
+.center {
+    background-color: rgb(252, 252, 252);
+    padding-top: 40px;
+}
+
 #about {
     background-color: rgb(240, 240, 240);
-    padding: 60px 40px 60px 40px;
+    padding: 60px 40px 20px 40px;
 }
 
 #centerbody {
@@ -52,7 +57,7 @@
 }
 
 #myCarousel {
-    margin: 0px -20px 0px -20px;
+    margin: 0px -40px 0px -40px;
 }
 
     
