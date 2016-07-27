@@ -1,4 +1,4 @@
-<! updated textures, change picture size for phone, and update info on website >
+<! updated textures, change picture size for phone, and update info on website, make two other tabs of "staff" and "events">
 
 
 <!DOCTYPE html>
@@ -14,7 +14,11 @@
   			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   			<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
+
 			  <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
 	</head>
 
 
@@ -32,10 +36,8 @@
     </div>
     <div class="collapse navbar-collapse navbar-right" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#myCarousel">Events</a></li>
-        <li><a href="#signup">Sign Up</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="team.html">Team</a></li>
       </ul>
     </div>
   </div>
@@ -149,64 +151,16 @@ There will be three types of tables based on proficiency level: Beginner, Interm
 <br>
 </div>
 
-
+</div>
   	
-  <div class="container">
-    <div class="row">
-    <div class="col-sm-6">
-      <div id="signup" class="container-fluid">
-  				<h2 id="title">Sign Up</h2>
-  					
-      <div class="container-fluid text-center">
-        <br>
-        <div class="row">
-          <div class="col-sm-12">
-            <h4>Sign up for the April 11th Dumpling Making dinner!</h4><br>
-            <div class="tickets">
-               <a href="https://docs.google.com/a/husky.neu.edu/forms/d/1WcS537wJ-AbGN9h6qJunvTWwNJUp3WCKoXohfR5IOgM/viewform">Tickets Available</a>
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-  		</div>
-      </div>
-    </div>
-
-    <div class="col-sm-6">
-      <div id="contact" class="container-fluid text-center">
-          <h2 id="title">Contact Us</h2>
-          <br>
-              <div class="fb">
-                <div class="row">
-                  <div class="col-sm-6">
-                      <a href="mailto:neu.changuage.table@gmail.com">
-                        <i class="fa fa-envelope-square fa-4x">
-                        </i>
-                    </a>
-                  </div>
-                  <div class="col-sm-6">
-                      <a href="https://www.facebook.com/neuchanguagetable/">
-                        <i class="fa fa-facebook-square fa-4x">
-                        </i>
-                      </a>
-                  </div>
-                </div>
-              </div>
-      </div>
-    </div>
 
 
 
-
-
-
-	</div>
+    <div w3-include-html="footer.html"></div>
 
 
       <script type="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script>w3IncludeHTML();</script>
 	</body>
 </html>
 
