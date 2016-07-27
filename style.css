@@ -98,14 +98,12 @@ body {
 #signup {
     background-color: rgb(245, 245, 245);
     padding: 60px 0px 0px 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 #contact {
     background-color: rgb(130, 130, 130);
     color: white;
-    padding: 60px 10px 0px 0px;
+    padding: 60px 10px 40px 0px;
 }
 
 .tickets {
