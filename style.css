@@ -96,8 +96,11 @@ body {
 
 
 #signup {
-    background-color: rgb(130, 130, 130);
-    padding: 60px 0px 0px 10px;
+    background-color: rgb(153, 51, 51);
+    padding: 30px 30px 30px 30px;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    margin-top: -20px;
 }
 /*
 #contact {
