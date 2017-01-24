@@ -113,6 +113,14 @@ body {
     margin-bottom: 45px;
 }
 
+.bios {
+    text-align: center;
+}
+
+.bioPhotos {
+    width: 40%;
+}
+
 .tickets {
     margin-top: 30px;
     margin-bottom: 30px;
