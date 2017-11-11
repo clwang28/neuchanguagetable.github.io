@@ -1,4 +1,17 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+body {
+    position: relative;
+}
+.affix {
+    top: 20px;
+}
+@media screen and (max-width: 810px) {
+    #info {
+        margin-left: 150px;
+    }
+}
+
+
 #main {
     /*transition: margin-left .5s;*/
     padding: 20px;
