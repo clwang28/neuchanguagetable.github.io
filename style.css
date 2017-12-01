@@ -1,19 +1,128 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 body {
-    position: relative;
+    font-family: 'Montserrat';
+    background: url(Photos/Chinesetexturesmall.png);
 }
+a {
+    color: darkred;
+}
+
+#contact > a {
+    color: white !important;
+}
+
+
+/* Style for navbar affix */
 .affix {
-    top: 20px;
+    top: 0;
+    width: 100%;
+    z-index: 999999 !important;
 }
-@media screen and (max-width: 810px) {
-    #info {
-        margin-left: 150px;
+/* .affix + .container-fluid {
+    padding-top: 70px;
+} */
+header {
+    height: 90vh;
+}
+.slideshow { 
+    margin: 0px auto; 
+    position: relative; 
+    width: 140vh;
+    height: 90vh;
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .90) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.65) 35%, rgba(0, 0, 0, 0.5) 62%, rgba(0, 0, 0, 0.5) 100%);
+}
+.slideshow > div > img {
+    padding: 10px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-height: 100%;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 1000px) {
+    .slideshow {
+        width: 90vw;
+        height: 90vw;
     }
 }
 
+.intro-content {
+    position: absolute;
+    z-index: 99999;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
 
+/* Navbar  */
+.navbar {
+    background-color: rgb(245, 245, 245);
+}
+
+.navbar a {
+    color: grey;
+}
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+.icon-bar {
+    background-color: black;
+}
+#logo {
+    max-height: 100%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+.bioPhotos {
+    width: 40%;
+}
+
+
+#mission {
+    padding-top: 50px;
+    padding-bottom: 50px;    
+    background-color: white;
+}
+
+#events {
+    padding-top: 50px;
+    padding-bottom: 50px;    
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.10) 17%, rgba(0, 0, 0, 0.10) 35%, rgba(0, 0, 0, 0.20) 62%, rgba(0, 0, 0, 0.33) 100%);
+}
+
+#resources {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#team {
+    padding-top: 50px;
+    padding-bottom: 50px;   
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.10) 17%, rgba(0, 0, 0, 0.10) 35%, rgba(0, 0, 0, 0.10) 82%, rgba(0, 0, 0, 0.33) 100%);
+    
+}
+
+
+
+#contact {
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    background-color: darkred;
+    color: lightgray;   
+}
+
+
+/*
 #main {
-    /*transition: margin-left .5s;*/
+    /*transition: margin-left .5s;*//*
     padding: 20px;
     font-family: 'Josefin Slab', serif;
 }
@@ -50,10 +159,7 @@ body {
     text-align: center;
 }
 
-#logo {
-    width: 30%;
-    border-radius: 5px 5px 5px 5px;
-}
+
 
 #style {
     font-size: 18px;
@@ -87,13 +193,13 @@ body {
 
     
 .carousel-inner img {
-    width: 70%; /* Set width to 100% */
+    width: 70%; /* Set width to 100% *//*
     min-height: 200px;
     margin: auto;
 }
 
 
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  /* Hide the carousel text when the screen is less than 600 pixels wide *//*
 @media (max-width: 600px) {
     .carousel-caption {
       display: none;
@@ -120,7 +226,7 @@ body {
     background-color: rgb(130, 130, 130);
     color: white;
     padding: 60px 10px 30px 0px;
-}*/
+}*//*
 
 #up {
     margin-bottom: 45px;
@@ -178,3 +284,4 @@ a:hover {
     margin-top: 20px;
 }
 
+*/

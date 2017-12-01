@@ -11,6 +11,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   			<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
 
 			  <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -22,18 +25,403 @@
 
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">    
-  <div class="container-fluid" style="background-color:darkred;color:#fff;height:220px;text-align:center;">
-    <h1>Northeastern University Chinese Language Table</h1>
-    <h3>东北大学中文桌子</h3>
-    <p>Welcome! This site is currently under construction. For updated information on the club, please
-      see our facebook: <br><br>
-      <button class="btn"><a style="color: darkred" href="https://www.facebook.com/neuchanguagetable/">Our Facebook Page</a></button>
-    </p>
-    <div class="jumbotron">
-        <img id="logo" src="Photos/logo.jpg">
-      </div> -->
-  </div>
-  <br>
+
+  <!-- Header -->
+  <!-- <div id="header" class="container text-center" style="color:darkred;height:110px;">
+    <h2>Northestern University Chinese Language Table</h2>
+  </div> -->
+
+  <header class="container-fluid">
+    <div class="slideshow">
+      <div>
+        <img src="Photos/6thaaday.png" alt="Image">
+      </div>
+      <div>
+        <img src="Photos/chaTimeOuting.jpg" alt="Image">
+      </div>
+    </div>
+  </header>
+
+  <script>
+    $(".slideshow > div:gt(0)").hide();
+
+    setInterval(function() { 
+      $('.slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('.slideshow');
+    },  6000);
+
+    $('#nav').affix({
+      offset: {
+        top: $('header').height()
+      }
+    });	
+  </script>
+
+  <!-- Navigation Bar -->
+  <nav id="nav" class="navbar" data-spy="affix">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img id="logo" src="Photos/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">            
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#websites">Websites</a></li>
+                <li><a href="#podcasts">Podcasts</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#local">Local Organizations</a></li>
+                <li><a href="#national">National Organizations</a></li>
+                <li><a href="#abroad">Study Abroad Opportunities</a></li>
+              </ul>
+            </li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Languages<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">English</a></li>
+                <li><a href="indexzh.html">中文</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+
+
+
+  <section id="mission" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-6">
+        <h1>Our Mission</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-6">              
+      <h4>
+        NEU Chinese Language Table is a new student organization 
+        which allows students studying or familiar with Mandarin to 
+        practice their conversational skills with both peers of similar 
+        proficiencies and native speakers. Our events offer a casual 
+        environment in which to learn and opportunities to taste a variety 
+        of authentic Chinese foods. Students studying formally in classes, 
+        heritage speakers, native/fluent speakers and those self-studying the 
+        language are all invited to attend!
+        Come see what we're all about!
+        跟我们聊天吧。
+        下个星期见！
+      </h4>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="events" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-6">
+        <h1>Events</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2">
+        <h3>Dumpling Making</h3>        
+      </div>
+      <div class="col-sm-6">              
+        <h4>
+          We hand-make tasty 饺子 (dumplings) in the AAC! We make both vegetarian and meat 饺子.
+          We prepare the filling ahead of time and wrap with dumpling skins during the event.
+          Then we steam and eat! 很好吃! Check out one of our dumpling nights in the video below:
+          We usually plan one dumpling-making night every semester!
+        </h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-6">              
+        <h4>
+          <video id="video1" style="width:100%;">
+            <source src="Dumpling_Video.mp4" type="video/mp4">
+            <source src="Dumpling_Video.ogg" type="video/ogg">
+            Your browser does not support HTML5 video.
+          </video>
+        </h4>
+      </div>
+      <div class="col-sm-4" style="padding-top:40px;">
+        <button class="btn btn-primary" onclick="playPause()">Play/Pause</button>
+      </div>
+    </div>
+    <script> 
+      var myVideo = document.getElementById("video1"); 
+      function playPause() { 
+          if (myVideo.paused) 
+              myVideo.play(); 
+          else 
+              myVideo.pause(); 
+      }
+    </script>
+
+    <br><br><br>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2">
+        <h3>Asian American Day</h3>        
+      </div>
+      <div class="col-sm-6">              
+        <h4>
+          On Saturday September 10th, we went to volunteer at the 6th Asian American 
+          day in Boston Common! There were music and dancing performances, yummy food vendors, 
+          and bubble tea!
+        </h4>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Resources section -->
+
+  <section id="resources" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-6">
+        <h1>Resources</h1>
+      </div>
+    </div>
+
+    <!-- Websites -->
+    <div id="websites" class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2">
+        <h3>Websites</h3>        
+      </div>
+      <div class="col-sm-6">
+        <h3>News</h3>              
+        <h4>
+          <a href="http://www.sixthtone.com/">Sixth Tone: </a>Fresh voices from today's China
+        </h4>
+        <h4>
+          <a href="http://supchina.com/">Sup China: </a>China in 2 minutes a day
+        </h4>
+        <h4>
+          <a href="http://www.chinafile.com/">China File: </a>中参馆 China Journalism and Current Affairs
+        </h4>
+
+        <br>
+
+        <h3>Societies</h3>
+        <h4>
+          <a href="http://www.mandarinsociety.org/">American Mandarin Society: </a>Supporting the development of the future stewards of U.S.-China relations
+        </h4>
+        <h4>
+          <a href="https://asiacenter.harvard.edu/">Harvard University Asian Center: </a>A university-wide inter-faculty initiative to promote research 
+          and teaching on Asia at Harvard that cuts across national borders
+        </h4>
+
+        <br>
+        <h3>Language Learning Methods</h3>
+        <h4>
+          <a href="http://www.hackingchinese.com/">Hacking Chinese: </a>A Better Way To Learn Mandarin
+        </h4>
+        <h4>
+          <a href="http://www.tobefluent.com/about/">To Be Fluent: </a>Blog about a language learner and her methods to improve
+        </h4>
+      </div>
+    </div>
+
+
+    <!-- Podcasts -->
+    <div id="podcasts" class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2">
+        <h3>Podcasts</h3>        
+      </div>
+      <div class="col-sm-6">  
+        <h3>Podcasts</h3>                
+        <h4>
+        </h4>
+      </div>
+    </div>
+
+
+
+    <!-- Apps -->
+    <div id="apps" class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2">
+        <h3>Apps</h3>        
+      </div>
+      <div class="col-sm-6">     
+        <h3>App Websites:</h3>      
+        <h4>
+          <a href="https://www.fluentu.com/">FluentU: </a>Language learning with live videos!
+          "Movie trailers? Music videos? News? Inspiring talks? 
+          No matter what your interest or skill level, we have you covered."
+        </h4>       
+        <h4>
+          <a href="https://skritter.com/">Skritter: </a>Your Path to Chinese character mastery!
+        </h4>          
+        <h4>
+          <a href="https://www.memrise.com/">Memrise: </a>Memrise in your pocket, on your bed and at your desk.
+        </h4>
+      </div>
+    </div>
+
+
+
+    <!-- Local Orgs -->
+    <div id="local" class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2">
+        <h3>Local Organizations</h3>        
+      </div>
+      <div class="col-sm-6">
+        <h3>Local Meetups:</h3>
+        <h4>
+          <a href="https://www.meetup.com/chinese-35/events/242161702/">Boston Chinatown Neighborhood Center Meetup: </a>
+          2nd Mondays @ 6:30p: Boston Mandarin Chinese Language- Monthly Meetup
+        </h4>
+        <h4>
+          <a href="https://www.meetup.com/PolyglotClubNewEngland/">Polyglot Club New England </a>
+        </h4>
+        <h4>
+          <a href="https://www.meetup.com/Chinese-conversation-and-classic-poetry/">Chinese Conversation and Classic Poetry </a>
+        </h4>
+        <h4>
+          <a href="https://www.meetup.com/Lets-learn-Mandarin-from-native-speakers/">Mandarin Meetup </a>
+        </h4>
+        <h4>
+          <a href="https://www.meetup.com/Boston-English-Chinese-Exchange-Club/">Boston English-Chinese Exchange Club: </a>
+          This group is created for people who are interested in learning English and Chinese mandarin. 
+          We'll do language exchange regularly and help each other improve the language we're learning.
+        </h4>
+        <h4>
+          <a href="https://www.meetup.com/Boston-Language-exchange-club/">Boston Language Exchange Club: </a>
+          This group is created for people who are learning a foreign language. We'll pair you up and you can teach each other the language you know without paying a tutor! 
+        </h4>
+        <h4>
+          <a href="https://www.facebook.com/groups/1082950898480987/about/">Boston Intercollegiate Mandarin Practice Group: </a>
+          Laid-back group for college students to practice Mandarin with no pressure and meet new people, open to anyone who can make it! Native Mandarin speakers, 
+          including those who are seeking to improve their English, are also welcome.
+        </h4>
+      </div>
+    </div>
+
+
+
+    <!-- National Orgs -->
+    <div id="national" class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2">
+        <h3>National Organizations</h3>        
+      </div>
+      <div class="col-sm-6">              
+        <h4>
+
+        </h4>
+      </div>
+    </div>
+
+
+    <!-- Study Abroad ops -->
+    <div id="abroad" class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2">
+        <h3>Study Abroad Opportunities</h3>        
+      </div>
+      <div class="col-sm-6">    
+        <h3>Critical Language Scholarship</h3>          
+        <h4>
+          <a href="http://clscholarship.org/">CLS Program: </a>The Critical Language Scholarship (CLS) 
+          Program is an intensive overseas language and cultural immersion program for American 
+          students enrolled at U.S. colleges and universities. The program includes intensive language 
+          instruction and structured cultural enrichment experiences designed to promote rapid language gains.
+        </h4>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="team" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-6">
+        <h1>Meet Our Team</h1>
+      </div>
+    </div>
+    <br>
+    <div class="row text-center">
+      <div class="col-sm-6">
+        <img class="img-circle bioPhotos" src="Photos/sydney.jpg"><br>
+        <h3>Sydney<br>President</h3><p>Sydney is a third year International Affairs major from Nigeria.</p>
+      </div>
+  
+      <div class="col-sm-6">
+        <img class="img-circle bioPhotos" src="Photos/michelle.jpg"><br>
+        <h3>Michelle<br>Treasurer</h3><p>Michelle is a third year Nursing student.</p>
+      </div>
+    </div>
+
+    <br><br>
+  
+    <div class="row text-center">
+      <div class="col-sm-6">
+        <img class="img-circle bioPhotos" src="Photos/zerun.jpg"><br>
+        <h3>Zerun (Victor)<br>Media Officer</h3><p>Zerun is a first year Computer Science major from Beijing, China.</p>
+      </div>
+  
+      <div class="col-sm-6">
+        <img class="img-circle bioPhotos" src="Photos/ciarra.jpg"><br>
+        <h3>Ciarra<br>Webmaster</h3><p>Ciarra is a second year Computer Science and Linguistics major from Missouri.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Container (Contact Section) -->
+  <section id="contact" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-6">
+        <h1>Contact</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>        
+      <div class="col-sm-6">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Boston, MA</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> neuchanguagetable@gmail.com</p>
+        <p>Check out our <a style="color: white !important" href="https://www.facebook.com/neuchanguagetable/">Facebook</a> page for updates on events!</p>        
+      </div>
+    </div>
+    <div class="row">
+
+    </div>
+  </section>
+
+
+
 
 
       <script type="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
